@@ -12,6 +12,3 @@ Script accepts 2 arguments
   Train Station : Options:
                 http://www.wmata.com/rail/stations.cfm?rail=or
                 OR is the defualt settings
-  
-
-
