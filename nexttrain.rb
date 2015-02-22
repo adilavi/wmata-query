@@ -27,7 +27,7 @@ end
 result_hash = JSON.parse(response.body)
 result_hash.each do |key, ary|
     if h=ary.find {|h| h['Line']==LineCode && h['LocationName']==StationName}
-        puts "The next Orange line train arriving to Ballston metro station is in #{h[RequestParam]} min(s)"
+        puts "The next Orange line train is arriving to Ballston metro station in #{h[RequestParam]} min(s)"
     else
         puts "Currently, No train is registered to arrive. Try again later."
     end
