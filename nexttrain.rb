@@ -1,8 +1,10 @@
 # Queries Washington Metropolitan Area Transit Authority for the next train arriving to a station
 #
-# Usage:        nexttrain trainLine station
+# Usage:        ruby nexttrain.rb
+#               or
+#               ruby nexttrain.rb [TrainLine] [TrainStation]
 #
-# Arguments:    trainLine - Two-letter abbreviation for the line
+# Arguments:    TrainLine - Two-letter abbreviation for the line
 #               Opttions :
 #               RD - Red
 #               BL - Blue
@@ -28,6 +30,7 @@ ApiKey = 'kfgpmgvfgacx98de9q3xazww'
 
 # help method to display command line argument options
 def help
+    puts "Usage: ruby nexttrain.rb or ruby nexttrain.rb [TrainLine] [TrainStation]"
     puts "Nexttrain takes up to 2 arguments:"
     puts "Train line - 1st argument, Options are : RD,BL,YL,GR,SV,OR. OR is set by default."
     puts "Staion name - 2nd argument, Options : http://www.wmata.com/rail/stations.cfm?rail=or. Ballston-MU is set by default."
